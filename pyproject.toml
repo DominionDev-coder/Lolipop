@@ -1,0 +1,25 @@
+[project]
+name = "lolipop"
+version = "1.0.0"
+description = "Utility for mac, it allows downloading and setting up projects easy"
+readme = "README.md"
+requires-python = ">=3.11.14"
+dependencies = [
+    "docker>=7.1.0",
+    "gitpython>=3.1.45",
+    "kubernetes>=34.1.0",
+    "python-dotenv>=1.0.0",
+    "pyyaml>=6.0.3",
+    "rich>=14.2.0",
+    "textual>=0.16.6",
+    "typer==0.20.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+lolipop = "lolipop.main:app"
