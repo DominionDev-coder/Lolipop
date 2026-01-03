@@ -1,7 +1,7 @@
 [project]
 name = "lolipop"
 version = "1.0.0"
-description = "Utility for mac, it allows downloading and setting up projects easy"
+description = "A developer utility for installing, setting up, and managing projects and environments effortlessly."
 readme = "README.md"
 requires-python = ">=3.11.14"
 dependencies = [
